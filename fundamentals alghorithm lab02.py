@@ -1,7 +1,6 @@
 #Reading Data from the Keyboard(task01)
 numbers = input("Enter numbers separated by spaces: ")
 print("The numbers you entered are:",numbers)
-
 row=int(input("Enter the number of rows: "))
 collon=int(input("Enter the number of columns: "))
 array = []
@@ -14,8 +13,6 @@ for i in range(row):
 print("The array is:")
 for row in array:
     print(row)
-    
-    
 #Reading a String from a File(task02)
 filename = input("Enter the text file name: ")
 try:
