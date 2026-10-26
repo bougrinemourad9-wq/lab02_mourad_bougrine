@@ -15,10 +15,12 @@ for row in array:
     print(row)
 #Reading a String from a File(task02)
 filename = input("Enter the text file name: ")
+
 try:
-    file = open(filename, "r")
-    numbers = file.read()
-    file.close()
-    print("Numbers in the file:",numbers)
+    with open(filename, "r", encoding="utf-8") as file:
+        numbers_from_file = file.read().strip()
+
+    print("Numbers in the file:", numbers_from_file)
+
 except FileNotFoundError:
-    print("File not found!")
+    print("File not found! Please check the filename.")
